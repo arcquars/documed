@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic');
+@import 'admin-lte/plugins/fontawesome-free/css/all.css';
+@import 'admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css';
+@import 'admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.css';
+
+@import 'admin-lte/dist/css/adminlte.css';
+@import 'admin-lte/plugins/select2/css/select2.min.css';

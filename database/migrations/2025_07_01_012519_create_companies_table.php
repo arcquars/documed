@@ -16,7 +16,7 @@ return new class extends Migration
 
             $table->string('legal_representative_dni', 25);
             $table->string('rn_owner', 250);
-            $table->string('status', 150);
+            $table->string('status', 150)->default('Tramitación');
             $table->boolean('deleted')->default(false);
 
             $table->timestamps();

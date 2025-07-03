@@ -5,7 +5,7 @@
 
 @section('content')
     <h1>Empresas</h1>
-    <a href="{{ route('companies.create') }}" class="btn btn-primary mb-3">Crear Nueva empresas</a>
+    <a href="{{ route('companies.create') }}" class="btn btn-primary btn-sm mb-3">Crear Nueva empresas</a>
 
     @if (session('success'))
         <div class="alert alert-success">
@@ -19,6 +19,7 @@
             <th>ID</th>
             <th>Representante legal</th>
             <th>Titular</th>
+            <th>Estado</th>
             <th>Acciones</th>
         </tr>
         </thead>
@@ -28,7 +29,8 @@
                 <td>{{ $company->id }}</td>
                 <td>{{ $company->legal_representative_dni }}</td>
                 <td>{{ $company->rn_owner }}</td>
-                <td>
+                <td>{{ $company->status }}</td>
+                <td class="text-right">
                     <a href="{{ route('companies.show', $company) }}" class="btn btn-info btn-sm">Ver</a>
                     <a href="{{ route('companies.edit', $company) }}" class="btn btn-warning btn-sm">Editar</a>
                     <form action="{{ route('companies.destroy', $company) }}" method="POST" style="display:inline;">
